@@ -5,7 +5,7 @@
 }
 
 body{
-  background-color: #DC481E;
+  background-color: black;
   padding: 2rem;
 }
 
@@ -39,4 +39,16 @@ body{
 .project > .arrow-icon {
   width: 2rem;
   height: 2rem;
+}
+
+/* temporary spinner container */
+.spinner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  gap: 2rem;
+  text-align: center;
 }
