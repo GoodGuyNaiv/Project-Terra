@@ -6,14 +6,66 @@
     <title>Project Terra</title>
     <link rel="icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="spinner.css" />
+    <link rel="stylesheet" href="carousel.css" />
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <div class="spinner-container">
+    <div class="nav">
       <img src="terra.png" alt="" class="image" />
-      <div>
-        <h1>This website is under construction <br />Please visit later.</h1>
-      </div>
+      <a href="">Menu</a>
     </div>
+    <!-- Carousel -->
+    <!-- <div class="carousel">
+      <div class="embla">
+        <div class="embla__container">
+          <div class="embla__slide">
+            <img src="./assets/1.jpg" alt="">
+          </div>
+          <div class="embla__slide">
+            <img src="./assets/2.jpg" alt="">
+          </div>
+          <div class="embla__slide">
+            <img src="./assets/3.jpg" alt="">
+          </div>
+        </div>
+      </div>    
+    </div> -->
+
+    <!-- Carousel -->
+    <section class="sandbox">
+      <section class="sandbox__carousel">
+        <div class="embla">
+          <div class="embla__viewport">
+            <div class="embla__container">
+              <div class="embla__slide">
+                <img
+                  class="embla__slide__img"
+                  src="./assets/1.jpg"
+                  alt="Your alt text"
+                />
+                <h2>IMAGE 1</h2>
+              </div>
+              <div class="embla__slide">
+                <img
+                  class="embla__slide__img"
+                  src="./assets/2.jpg"
+                  alt="Your alt text"
+                />
+                <h2>IMAGE 2</h2>
+              </div>
+              <div class="embla__slide">
+                <img
+                  class="embla__slide__img"
+                  src="./assets/3.jpg"
+                  alt="Your alt text"
+                />
+                <h2>IMAGE 3</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
   </body>
 </html>
