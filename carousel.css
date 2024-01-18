@@ -23,7 +23,8 @@
   display: block;
   height: var(--slide-height);
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  max-height: 650px;
 }
 
 .sandbox {
