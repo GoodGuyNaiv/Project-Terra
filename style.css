@@ -2,11 +2,18 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: black;
   color: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  font-family: system-ui;
+  font-size: 1.125rem;
+  background-color: rgb(32, 32, 32);
 }
 
 body > * + * {
@@ -59,7 +66,7 @@ body > * + * {
 .image {
   max-width: 100px;
   border-radius: 50%;
-  animation: spin 3s linear infinite;
+  /* animation: spin 3s linear infinite; */
 }
 
 @keyframes spin {
@@ -93,7 +100,8 @@ body > * + * {
 
 .nav {
   width: 95%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,9 +109,118 @@ body > * + * {
   border-bottom: 1px solid white;
 }
 
-.nav > a {
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav > div > a {
   font-size: 2rem;
   color: white;
   text-decoration: none;
   font-weight: 600;
+}
+
+.nav > div > a:hover{
+  color: rgb(175, 175, 175);
+  text-decoration: line-through;
+  text-decoration-thickness: 4px;
+}
+
+.scroller__inner > img {
+  max-width: 100%;
+  max-height: 350px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  margin-right: 2rem;
+}
+
+.about-section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.about-section > p {
+  text-align: center;
+  line-height: 1.75;
+  font-size: 1.5rem;
+  color: rgb(175, 175, 175);
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.contact-links-container {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 1rem 0rem 1rem 0rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-link {
+  font-size: 1.2rem;
+  color: rgb(175, 175, 175);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-link:hover {
+  color: white;
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.mobile-number {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-inner {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-inner > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+.year {
+  border-left: 1px solid white;
+  padding: 0rem 1rem 0rem 1rem;
 }
