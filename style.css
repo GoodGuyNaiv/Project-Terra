@@ -2,9 +2,10 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: white;
 }
 
-body{
+body {
   background-color: black;
   padding: 2rem;
 }
@@ -13,15 +14,14 @@ body{
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: #DC481E;
+  background-color: #dc481e;
   padding: 2rem 0 2rem 0;
   border-bottom: 1px solid black;
 }
-.header > .left-section{
+.header > .left-section {
   display: flex;
   gap: 6px;
 }
-
 
 .project-section {
   margin-top: 2rem;
@@ -53,7 +53,7 @@ body{
   text-align: center;
 }
 
-.image{
+.image {
   max-width: 100px;
   border-radius: 50%;
   animation: spin 3s linear infinite;
@@ -66,4 +66,38 @@ body{
   to {
     transform: rotate(360deg);
   }
+}
+
+.socials-container {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socials-container > div {
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(160, 160, 160);
+}
+
+.social-icon{
+  max-width: 50px;
 }
